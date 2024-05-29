@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ruda:wght@400;600;700&display=swap");
+
+.hide{
+    display: none;
+}
+
+
+.block{
+    display: block;
+}
+
+.result{
+    display: none;
+}
+
+/* -------------------------------------------   */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #262a2f;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.container{
+    width: 600px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;  /* 50% initially*/
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+}
+/* ============================================================= */
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 3em;
+
+}
+.Qstart{
+    font-size: 18px;
+    padding: 9px 24px 9px 24px;
+    border-radius: 9px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    outline: none;
+    margin: 40px 0px 14px 11em;
+    background-color: rgb(182, 154, 207);
+    border: 2px solid rgb(105, 102, 102);
+    cursor: pointer;
+}
+.Qstart:hover{
+    background-color: rgb(189, 182, 196);
+}
+.timerdiv{
+    font-size: large;
+    color: gray;
+    background-color: black;
+    margin-right: 20px;
+    border-radius: 4px;
+    padding: 3px 0px 3px 10px;
+    margin: 20px 0px 20px 0px;
+}
+.tim{
+    color: rgb(228, 59, 59);
+    font-weight: bold;
+}
+.categy{
+    margin-bottom: 16px;
+}
+.Quest {
+    font-size: large;  
+    margin-bottom: 15px;
+}
+
+.option-style{
+    cursor: pointer;
+    font-size: large;
+    margin: 10px 0px 15px 0px;
+    padding: 10px 4px 10px 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(197, 193, 193);
+}
+.option-style input[type="radio"] {
+    margin-right: 14px; /* Adjust spacing between radio button and text */
+}
+
+.option-style:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer; /* Makes it clear it's interactable */
+    font-weight: bold;
+}
+
+.nxtBtn{
+    font-size: 20px;
+    outline: none;
+    font-family: 'poppins', sans-serif;
+    padding: 5px 70px 5px 70px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    border-radius: 6px;
+    margin: 15px 0px 8px 20px;
+    border: 2px solid black;
+    background-color: gray;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------ */
+.RsltHeader {
+    font-size: 31px;
+    
+}
+.scoreText{
+    font-size: large;
+    margin-top: 24px;
+}
+#finalScore{
+    color: rgb(228, 59, 59);
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+
+
+/* ||||||||||||||||||||||||||||||||||||  BREAK POINTS  |||||||||||||||||||||||||||||||||||||| */
+
+@media (max-width: 650px) {
+    .container{
+        width: 500px;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .Qstart {
+        font-size: 16px;
+        padding: 9px 24px 9px 24px;
+        margin: 40px 0px 11px 9em;
+    }
+}
+
+@media (max-width: 530px) {
+    .container {
+        width: 400px;
+        padding: 17px 26px;
+    }
+    .title{
+        font-size: 37px;
+    }
+    .Qstart {
+        font-size: 14px;
+        padding: 9px 22px 9px 22px;
+        margin: 38px 0px 11px 8em;
+    }
+    .timerdiv{
+        font-size: medium;
+        margin: 16px 0px 14px 0px;
+    }
+    .categy{
+        margin-bottom: 10px;
+    }
+    .Quest {
+        font-size: medium;  
+        margin-bottom: 13px;
+    }
+    .option-style{
+        font-size: medium;
+        margin: 8px 0px 13px 0px;
+    }
+    .nxtBtn {
+        font-size: 17px;
+        padding: 5px 50px 5px 50px;
+        letter-spacing: 1px;
+        margin: 7px 0px 7px 18px;
+    }
+    .RsltHeader {
+        font-size: 25px;
+    }
+    .scoreText{
+        font-size: medium;
+        margin-top: 20px;
+    }
+    #finalScore{
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+       width: 370px;
+       padding: 18px 10px; 
+    }
+}
+
+@media (max-width: 373px) {
+   .container {
+    width: 315px;
+    padding: 18px 8px;
+   }
+   .title {
+    font-size: 32px;
+   }
+   .Qstart {
+    padding: 8px 20px 8px 20px;
+    margin: 30px 0px 10px 6.5em;
+   }
+   .timerdiv{
+    margin: 14px 0px 13px 0px;
+   }
+   .categy{
+    margin-bottom: 8px;
+    font-size: small;
+   }
+   .Quest {
+    font-size: small; 
+    }
+    .option-style{
+        font-size: small;
+    }
+    .option-style input[type="radio"] {
+        margin-right: 10px; /* Adjust spacing between radio button and text */
+    }
+    .nxtBtn {
+        font-size: 15px;
+        padding: 5px 40px 5px 40px;
+    }
+    .RsltHeader {
+        font-size: 21px;
+    }
+    .scoreText{
+        font-size: medium;
+        margin-top: 17px;
+    }
+    #finalScore{
+        font-size: 17px;
+    }
+}
